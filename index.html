@@ -1,29 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Mon Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MbourShop - Boutique en Ligne</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="page">
+<body>
 
-  <header class="header">
-    <nav class="navbar">
-      <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">À propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Projets</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- EN-TÊTE -->
+    <header>
+        <div class="logo">MbourShop</div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#produits">Produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-burger">☰</div>
+    </header>
 
-  <main class="main-content">
-    <h1 class="title">Mon Portfolio</h1>
-    <p class="description">Bienvenue ! C'est mon portfolio stylé.</p>
-  </main>
-  
+    <!-- BANNIÈRE -->
+    <section class="hero" id="accueil">
+        <div class="hero-text">
+            <h1>Collection Été 2026</h1>
+            <p>Minimal, utile et durable. Découvrez notre sélection à Dakar.</p>
+            <button class="btn-primary">Voir la boutique</button>
+        </div>
+    </section>
+
+    <!-- SECTION PRODUITS -->
+    <section class="produits" id="produits">
+        <h2>Produits Phares</h2>
+        <div class="grille-produits">
+            
+            <!-- Carte 1 -->
+            <div class="carte">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400" alt="Sac à dos">
+                <h3>Sac Classique</h3>
+                <p class="desc">Sac à dos imperméable, parfait pour Dakar.</p>
+                <span class="prix">12 500 FCFA</span>
+                <button class="btn-buy">Acheter maintenant</button>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="carte">
+                <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=400" alt="Mug">
+                <h3>Mug Artisanal</h3>
+                <p class="desc">Mug en céramique fait main, design épuré.</p>
+                <span class="prix">5 000 FCFA</span>
+                <button class="btn-buy">Acheter maintenant</button>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="carte">
+                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" alt="Ecouteurs">
+                <h3>Earbuds Pro</h3>
+                <p class="desc">Son HD et autonomie de 30h. Livraison rapide.</p>
+                <span class="prix">25 000 FCFA</span>
+                <button class="btn-buy">Acheter maintenant</button>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="carte">
+                <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400" alt="Casquette">
+                <h3>Casquette Lin</h3>
+                <p class="desc">Casquette légère 100% lin, anti-chaleur.</p>
+                <span class="prix">7 500 FCFA</span>
+                <button class="btn-buy">Acheter maintenant</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer id="contact">
+        <div class="footer-col">
+            <h4>MbourShop</h4>
+            <p>Qualité pour chaque jour.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Livraison</a> <a href="#">Retours</a> <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Dakar, Sénégal - +221 764018168</p>
+        </div>
+        <div class="copyright">
+            © 2026 MbourShop. Tous droits réservés.
+        </div>
+    </footer>
 
 </body>
 </html>

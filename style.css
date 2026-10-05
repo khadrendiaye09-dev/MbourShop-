@@ -1,0 +1,73 @@
+/* RESET & BASE */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', sans-serif; background:#fdfaf6; color:#1a1a1a; line-height:1.6; }
+
+/* HEADER */
+header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:18px 5%; background:white; position:sticky; top:0; z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+.logo { font-weight:800; font-size:1.5rem; letter-spacing:1px; }
+nav a { margin-left:20px; text-decoration:none; color:#333; font-weight:500; }
+nav a:hover { color:#000; text-decoration:underline; }
+.menu-burger { display:none; font-size:1.5rem; }
+
+/* HERO */
+.hero {
+    background:#e8dccf;
+    padding:80px 5%; display:flex; align-items:center; min-height:50vh;
+}
+.hero-text h1 { font-size:2.8rem; margin-bottom:10px; }
+.hero-text p { margin-bottom:20px; color:#555; }
+.btn-primary {
+    background:#111827; color:white; padding:12px 28px; border:none;
+    border-radius:8px; cursor:pointer; font-weight:600;
+}
+
+/* PRODUITS */
+.produits { padding:60px 5%; }
+.produits h2 { text-align:center; margin-bottom:30px; font-size:2rem; }
+.grille-produits {
+    display:grid; grid-template-columns: repeat(4, 1fr); gap:20px;
+}
+.carte {
+    background:white; border-radius:16px; padding:15px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:0.3s;
+    display:flex; flex-direction:column; text-align:center;
+}
+.carte:hover { transform: translateY(-5px); box-shadow:0 8px 30px rgba(0,0,0,0.12); }
+.carte img { width:100%; height:180px; object-fit:cover; border-radius:12px; margin-bottom:12px; }
+.carte h3 { margin:8px 0 4px; }
+.desc { font-size:0.9rem; color:#666; flex-grow:1; }
+.prix { font-weight:700; margin:10px 0; display:block; }
+.btn-buy {
+    background:#111827; color:white; border:none; padding:10px;
+    border-radius:8px; cursor:pointer; width:100%;
+}
+.btn-buy:hover { background:#000; }
+
+/* FOOTER */
+footer {
+    background:#111827; color:#ddd; padding:50px 5% 20px;
+    display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px;
+}
+.footer-col h4 { color:white; margin-bottom:10px; }
+.footer-col a { display:block; color:#aaa; text-decoration:none; margin-bottom:5px; }
+.footer-col a:hover { color:white; }
+.copyright { width:100%; text-align:center; margin-top:20px; border-top:1px solid #2a344a; padding-top:15px; font-size:0.85rem; color:#888; }
+
+/* --- RESPONSIVE : MEDIA QUERIES --- */
+/* Tablette */
+@media (max-width: 1024px) {
+    .grille-produits { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav { display:none; } /* On cache nav, on affiche burger */
+    .menu-burger { display:block; }
+    .hero-text h1 { font-size:1.8rem; }
+    .grille-produits { grid-template-columns: 1fr; }
+    footer { flex-direction:column; text-align:center; }
+}
